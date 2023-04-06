@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Raleway:wght@300;400;700&display=swap");
+:root {
+  --primary-color: #00305b;
+  --secondary-color: #41b7c4;
+  --ternary-color: #0f4c85;
+}
+
+body {
+  background: #f2f2f2;
+  font-family: "Raleway";
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0em 1em -3em 1em;
+}
+.navbar a.logo {
+  color: var(--primary-color);
+  font-family: "Noto Serif JP";
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.navbar a.logo img {
+  margin-top: 0.2em;
+  margin-bottom: -0.5em;
+  width: 2em;
+}
+.navbar nav {
+  margin-bottom: -1em;
+}
+.navbar nav ul {
+  display: flex;
+  list-style-type: none;
+}
+.navbar nav ul li {
+  margin: 0em 1em -1em 1em;
+  cursor: pointer;
+}
+.navbar nav ul li a {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+.navbar nav ul li a:hover {
+  color: var(--secondary-color);
+}
+.navbar nav ul a.current {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+section.hero {
+  background-image: url("../images/skyscrapers.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+section.hero .container {
+  padding-left: 5em;
+}
+section.hero .container h1 {
+  text-transform: uppercase;
+  font-size: 5em;
+  width: 50%;
+  margin-bottom: 0;
+  padding-top: 2.5em;
+}
+section.hero .container h1 span {
+  font-weight: 400;
+}
+section.hero .container h2.subhead {
+  background: var(--primary-color);
+  font-size: 1.5em;
+  font-weight: 300;
+  width: 40%;
+  text-shadow: 1px 1px gray;
+  border-radius: 1em;
+  padding: 0.5em 0.5em;
+}
+
+section.vision {
+  background: var(--primary-color);
+  text-align: center;
+  color: white;
+  padding: 5em 0em;
+}
+section.vision h1 {
+  margin: 0;
+  padding-bottom: 1em;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+section.vision p {
+  padding: 1em 8em;
+}
+
+section.teamwork {
+  background-image: url("/Law_firm/images/teamwork.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90vh;
+  opacity: 0.7;
+}
+
+section.attorneys {
+  background: #eaf4f6;
+  text-align: center;
+  color: var(--primary-color);
+}
+section.attorneys h1 {
+  margin: 0;
+  padding: 2em 0em;
+  font-size: 2.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+section.attorneys ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0em 10em 4em 10em;
+  margin: 0;
+}
+section.attorneys ul li {
+  margin: 0em 1em;
+}
+section.attorneys ul li img {
+  width: 70%;
+}
+section.attorneys ul li h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0.5em 0em;
+}
+section.attorneys ul li h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 1em;
+}
+section.attorneys ul li hr {
+  width: 70%;
+}
+
+section.contact {
+  padding: 5em 0em;
+  background: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+section.contact h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.5em;
+  margin: 0em -5em 1em 0em;
+  padding: 0em 0em 0em 2em;
+  width: 50%;
+}
+section.contact h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+section.contact span {
+  font-weight: bold;
+}
+section.contact p {
+  line-height: 1.5em;
+}
+section.contact a {
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.3em;
+}
+section.contact .right-col {
+  width: 70%;
+}
+section.contact .right-col form {
+  padding-top: 2em;
+}
+section.contact .right-col .inputs {
+  display: flex;
+  justify-content: space-between;
+}
+section.contact .right-col .inputs .form-right-col {
+  width: 50%;
+}
+section.contact .right-col .inputs .form-left-col {
+  width: 50%;
+}
+section.contact .right-col .inputs label {
+  display: block;
+  padding: 1em 0em 0.5em 0em;
+}
+section.contact .right-col .inputs input {
+  font-family: "Raleway";
+  width: 90%;
+  box-sizing: border-box;
+  padding: 0.5em;
+}
+section.contact .right-col .inputs textarea {
+  font-family: "Raleway";
+  width: 66%;
+  padding: 0.8em;
+}
+section.contact .submit-application {
+  margin-top: 1em;
+  background: var(--ternary-color);
+  color: white;
+  font-family: "Raleway";
+  font-size: 1em;
+  width: 86%;
+  padding: 0.5em;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.back-to-top {
+  background: var(--ternary-color);
+}
+.back-to-top h4 {
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0;
+  padding-bottom: 1em;
+}
+.back-to-top .back-to-top-img {
+  display: flex;
+  justify-content: center;
+  padding: 1em 0em 0.5em 0em;
+}
+.back-to-top .back-to-top-img img {
+  width: 2em;
+}
+
+footer {
+  color: var(--ternary-color);
+  margin: 1em;
+}
+footer a {
+  color: var(--ternary-color);
+}/*# sourceMappingURL=main.css.map */
