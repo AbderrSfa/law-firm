@@ -6,21 +6,26 @@
 	--ternary-color: #0f4c85;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: #f2f2f2;
 	font-family: 'Raleway';
 	margin: 0;
+	min-width: 800px;
 }
 
 .navbar {
 	display: flex;
 	justify-content: space-between;
 	margin: 0em 1em -3em 1em;
-	
+
 	a.logo {
 		img {
-			margin-top: .2em;
-			margin-bottom: -.5em;
+			margin-top: 0.2em;
+			margin-bottom: -0.5em;
 			width: 2em;
 		}
 
@@ -45,7 +50,7 @@ body {
 					color: black;
 					text-transform: uppercase;
 					text-decoration: none;
-					font-size: .9em;
+					font-size: 0.9em;
 					&:hover {
 						color: var(--secondary-color);
 					}
@@ -53,8 +58,8 @@ body {
 			}
 
 			a.current {
-					color: var(--secondary-color);
-					font-weight: bold;
+				color: var(--secondary-color);
+				font-weight: bold;
 			}
 		}
 		margin-bottom: -1em;
@@ -62,10 +67,10 @@ body {
 }
 
 section.hero {
-	background-image: url("../images/skyscrapers.jpg");
+	background-image: url('../images/skyscrapers.jpg');
 	background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+	background-position: center;
+	background-size: cover;
 	color: white;
 	width: 100%;
 	height: 100vh;
@@ -117,7 +122,7 @@ section.vision {
 }
 
 section.teamwork {
-	background-image: url("/Law_firm/images/teamwork.jpg");
+	background-image: url('/images/teamwork.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -134,7 +139,7 @@ section.attorneys {
 	h1 {
 		margin: 0;
 		padding: 2em 0em;
-		font-size:2.5em;
+		font-size: 2.5em;
 		font-weight: 400;
 		text-transform: uppercase;
 	}
@@ -154,7 +159,7 @@ section.attorneys {
 			h2 {
 				font-weight: 400;
 				text-transform: uppercase;
-				margin: .5em 0em;
+				margin: 0.5em 0em;
 			}
 
 			h3 {
@@ -178,7 +183,6 @@ section.contact {
 	display: flex;
 	justify-content: space-between;
 
-	
 	h1 {
 		text-transform: uppercase;
 		font-weight: 400;
@@ -192,7 +196,6 @@ section.contact {
 		text-transform: uppercase;
 		font-weight: 400;
 		font-size: 1.3em;
-
 	}
 
 	span {
@@ -229,22 +232,21 @@ section.contact {
 
 			label {
 				display: block;
-				padding: 1em 0em .5em 0em;
+				padding: 1em 0em 0.5em 0em;
 			}
 
 			input {
 				font-family: 'Raleway';
 				width: 90%;
 				box-sizing: border-box;
-				padding: .5em;
+				padding: 0.5em;
 			}
 
 			textarea {
 				font-family: 'Raleway';
 				width: 66%;
-				padding: .8em;
+				padding: 0.8em;
 			}
-
 		}
 	}
 
@@ -255,7 +257,7 @@ section.contact {
 		font-family: 'Raleway';
 		font-size: 1em;
 		width: 86%;
-		padding: .5em;
+		padding: 0.5em;
 		border: 1px solid white;
 		cursor: pointer;
 	}
@@ -276,7 +278,7 @@ section.contact {
 	.back-to-top-img {
 		display: flex;
 		justify-content: center;
-		padding: 1em 0em .5em 0em;
+		padding: 1em 0em 0.5em 0em;
 		img {
 			width: 2em;
 		}
